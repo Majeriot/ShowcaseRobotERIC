@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<KinematicModel MODEL="SilverSegway" VERSION="2.3">
+
+  <Parameters>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position0_x" PRIOR="224.379333496094" SD="0" VALUE="224.379333496094"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position0_y" PRIOR="113.547325134277" SD="0" VALUE="113.547325134277"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position0_z" PRIOR="22.5526428222656" SD="0" VALUE="22.5526428222656"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position2_x" PRIOR="185.821502685547" SD="0" VALUE="185.821502685547"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position2_y" PRIOR="102.148612976074" SD="0" VALUE="102.148612976074"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position2_z" PRIOR="72.45556640625" SD="0" VALUE="72.45556640625"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position4_x" PRIOR="182.533355712891" SD="0" VALUE="182.533355712891"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position4_y" PRIOR="-135.178588867188" SD="0" VALUE="-135.178588867188"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position4_z" PRIOR="71.0820693969727" SD="0" VALUE="71.0820693969727"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position7_x" PRIOR="-52.8447761535645" SD="0" VALUE="-52.8447761535645"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position7_y" PRIOR="-25.1058311462402" SD="0" VALUE="-25.1058311462402"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position7_z" PRIOR="447.038421630859" SD="0" VALUE="447.038421630859"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position8_x" PRIOR="-123.848266601563" SD="0" VALUE="-123.848266601563"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position8_y" PRIOR="-90.6329803466797" SD="0" VALUE="-90.6329803466797"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Position8_z" PRIOR="443.611724853516" SD="0" VALUE="443.611724853516"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled50_x" PRIOR="-227.554443359375" SD="0" VALUE="-227.554443359375"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled50_y" PRIOR="2.37142181396484" SD="0" VALUE="2.37142181396484"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled50_z" PRIOR="249.776489257813" SD="0" VALUE="249.776489257813"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled43_x" PRIOR="-258.376037597656" SD="0" VALUE="-258.376037597656"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled43_y" PRIOR="-50.2613067626953" SD="0" VALUE="-50.2613067626953"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled43_z" PRIOR="339.802673339844" SD="0" VALUE="339.802673339844"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled47_x" PRIOR="-303.099639892578" SD="0" VALUE="-303.099639892578"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled47_y" PRIOR="-161.348022460938" SD="0" VALUE="-161.348022460938"/>
+    <Parameter HIDDEN="1" NAME="SilverSegway_Unlabeled47_z" PRIOR="-3.43661689758301" SD="0" VALUE="-3.43661689758301"/>
+  </Parameters>
+
+  <Skeleton>
+    <Segment BOUNDS="-273.224 -323.224 -240 273.224 323.224 600" CONTEXT="General" INERTIA="0 0 0" MASS="0" MASS-CENTRE="0 0 0" NAME="SilverSegway" RGB="255 255 255">
+      <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="World_SilverSegway" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + + + + " T="* * * * * * ">
+        <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+      </JointFree>
+    </Segment>
+  </Skeleton>
+
+  <MarkerSet>
+    <Markers>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position0" POSITION="224.379 113.547 22.5526" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Position0_x' 'SilverSegway_Position0_y' 'SilverSegway_Position0_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position2" POSITION="185.822 102.149 72.4556" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Position2_x' 'SilverSegway_Position2_y' 'SilverSegway_Position2_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position4" POSITION="182.533 -135.179 71.0821" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Position4_x' 'SilverSegway_Position4_y' 'SilverSegway_Position4_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position7" POSITION="-52.8448 -25.1058 447.038" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Position7_x' 'SilverSegway_Position7_y' 'SilverSegway_Position7_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position8" POSITION="-123.848 -90.633 443.612" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Position8_x' 'SilverSegway_Position8_y' 'SilverSegway_Position8_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled50" POSITION="-227.554 2.37142 249.776" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Unlabeled50_x' 'SilverSegway_Unlabeled50_y' 'SilverSegway_Unlabeled50_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled43" POSITION="-258.376 -50.2613 339.803" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Unlabeled43_x' 'SilverSegway_Unlabeled43_y' 'SilverSegway_Unlabeled43_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled47" POSITION="-303.1 -161.348 -3.43662" RADIUS="12.5" RGB="255 255 255" SEGMENT="SilverSegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SilverSegway_Unlabeled47_x' 'SilverSegway_Unlabeled47_y' 'SilverSegway_Unlabeled47_z'"/>
+      </Marker>
+    </Markers>
+    <Sticks>
+      <Stick MARKER1="Position0" MARKER2="Position2" RGB="255 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Position4" RGB="255 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Position7" RGB="255 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Position8" RGB="255 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled50" RGB="255 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled43" RGB="255 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled47" RGB="255 255 255"/>
+      <Stick MARKER1="Position2" MARKER2="Position4" RGB="255 255 255"/>
+      <Stick MARKER1="Position2" MARKER2="Position7" RGB="255 255 255"/>
+      <Stick MARKER1="Position2" MARKER2="Position8" RGB="255 255 255"/>
+      <Stick MARKER1="Position2" MARKER2="Unlabeled50" RGB="255 255 255"/>
+      <Stick MARKER1="Position2" MARKER2="Unlabeled43" RGB="255 255 255"/>
+      <Stick MARKER1="Position2" MARKER2="Unlabeled47" RGB="255 255 255"/>
+      <Stick MARKER1="Position4" MARKER2="Position7" RGB="255 255 255"/>
+      <Stick MARKER1="Position4" MARKER2="Position8" RGB="255 255 255"/>
+      <Stick MARKER1="Position4" MARKER2="Unlabeled50" RGB="255 255 255"/>
+      <Stick MARKER1="Position4" MARKER2="Unlabeled43" RGB="255 255 255"/>
+      <Stick MARKER1="Position4" MARKER2="Unlabeled47" RGB="255 255 255"/>
+      <Stick MARKER1="Position7" MARKER2="Position8" RGB="255 255 255"/>
+      <Stick MARKER1="Position7" MARKER2="Unlabeled50" RGB="255 255 255"/>
+      <Stick MARKER1="Position7" MARKER2="Unlabeled43" RGB="255 255 255"/>
+      <Stick MARKER1="Position7" MARKER2="Unlabeled47" RGB="255 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Unlabeled50" RGB="255 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Unlabeled43" RGB="255 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Unlabeled47" RGB="255 255 255"/>
+      <Stick MARKER1="Unlabeled50" MARKER2="Unlabeled43" RGB="255 255 255"/>
+      <Stick MARKER1="Unlabeled50" MARKER2="Unlabeled47" RGB="255 255 255"/>
+      <Stick MARKER1="Unlabeled43" MARKER2="Unlabeled47" RGB="255 255 255"/>
+    </Sticks>
+  </MarkerSet>
+
+  <Alignment/>
+
+</KinematicModel>

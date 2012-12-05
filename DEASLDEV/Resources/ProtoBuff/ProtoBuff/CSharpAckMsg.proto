@@ -1,0 +1,21 @@
+package LTLMoPCsharpInterface;
+message CSharpAckMsg {
+    required int32 id = 1;
+	optional int32 status = 2;
+	message Sensor {
+		optional SensorType type= 1;
+		optional double stat = 2;
+		repeated double data = 3[packed=true];
+	}
+	enum SensorType {
+		LIDAR = 0;
+		ARTAG = 1;
+	}
+	optional string msg = 3;
+	optional Sensor s1 = 16;
+	optional Sensor s2 = 17;
+	optional Sensor s3 = 18;
+	optional Sensor s4 = 19; 
+	optional Sensor s5 = 20;
+
+}

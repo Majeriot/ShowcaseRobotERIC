@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{4c985845-d66d-4310-9267-6cba0b58d692}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stubs">
+      <UniqueIdentifier>{9ee72c5d-f9f1-4481-a527-9d4d69639fe8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="descriptor.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="descriptor.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="descriptor_database.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamic_message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extension_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="extension_set_heavy.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generated_message_reflection.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="generated_message_util.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="message_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="reflection_ops.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="repeated_field.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="service.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="text_format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unknown_field_set.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wire_format.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wire_format_lite.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\common.cc">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\hash.cc">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\once.cc">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\structurally_valid.cc">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\strutil.cc">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="stubs\substitute.cc">
+      <Filter>stubs</Filter>
+    </ClCompile>
+    <ClCompile Include="io\coded_stream.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\gzip_stream.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\printer.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\tokenizer.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\zero_copy_stream.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\zero_copy_stream_impl.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+    <ClCompile Include="io\zero_copy_stream_impl_lite.cc">
+      <Filter>io</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptor.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="descriptor_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="extension_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generated_message_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="generated_message_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="message_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="package_info.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="reflection_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="repeated_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="text_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unknown_field_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wire_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wire_format_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wire_format_lite_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\common.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\config.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\hash.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\map-util.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\once.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\stl_util-inl.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\strutil.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="stubs\substitute.h">
+      <Filter>stubs</Filter>
+    </ClInclude>
+    <ClInclude Include="io\coded_stream.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\config.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\gzip_stream.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\package_info.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\printer.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\tokenizer.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\zero_copy_stream.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\zero_copy_stream_impl.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="io\zero_copy_stream_impl_lite.h">
+      <Filter>io</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

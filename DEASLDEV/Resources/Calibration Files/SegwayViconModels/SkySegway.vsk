@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<KinematicModel MODEL="SkySegway" VERSION="2.3">
+
+  <Parameters>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position0_x" PRIOR="224.054992675781" SD="0" VALUE="224.054992675781"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position0_y" PRIOR="115.046829223633" SD="0" VALUE="115.046829223633"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position0_z" PRIOR="23.0480194091797" SD="0" VALUE="23.0480194091797"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position1_x" PRIOR="222.962997436523" SD="0" VALUE="222.962997436523"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position1_y" PRIOR="-121.376647949219" SD="0" VALUE="-121.376647949219"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position1_z" PRIOR="21.7972965240479" SD="0" VALUE="21.7972965240479"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position5_x" PRIOR="-124.49723815918" SD="0" VALUE="-124.49723815918"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position5_y" PRIOR="91.2291030883789" SD="0" VALUE="91.2291030883789"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position5_z" PRIOR="444.978393554688" SD="0" VALUE="444.978393554688"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position8_x" PRIOR="-120.52734375" SD="0" VALUE="-120.52734375"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position8_y" PRIOR="-89.9560546875" SD="0" VALUE="-89.9560546875"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position8_z" PRIOR="445.857055664063" SD="0" VALUE="445.857055664063"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position9_x" PRIOR="-230.995315551758" SD="0" VALUE="-230.995315551758"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position9_y" PRIOR="-138.432952880859" SD="0" VALUE="-138.432952880859"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Position9_z" PRIOR="373.373352050781" SD="0" VALUE="373.373352050781"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled10_x" PRIOR="-297.119598388672" SD="0" VALUE="-297.119598388672"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled10_y" PRIOR="166.083160400391" SD="0" VALUE="166.083160400391"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled10_z" PRIOR="-0.727152824401855" SD="0" VALUE="-0.727152824401855"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled21_x" PRIOR="-300.433685302734" SD="0" VALUE="-300.433685302734"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled21_y" PRIOR="-15.9221172332764" SD="0" VALUE="-15.9221172332764"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled21_z" PRIOR="-0.48042631149292" SD="0" VALUE="-0.48042631149292"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled9_x" PRIOR="-304.156372070313" SD="0" VALUE="-304.156372070313"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled9_y" PRIOR="-160.955764770508" SD="0" VALUE="-160.955764770508"/>
+    <Parameter HIDDEN="1" NAME="SkySegway_Unlabeled9_z" PRIOR="-1.87212657928467" SD="0" VALUE="-1.87212657928467"/>
+  </Parameters>
+
+  <Skeleton>
+    <Segment BOUNDS="-273.224 -323.224 -240 273.224 323.224 600" CONTEXT="General" INERTIA="0 0 0" MASS="0" MASS-CENTRE="0 0 0" NAME="SkySegway" RGB="170 255 255">
+      <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="World_SkySegway" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + + + + " T="* * * * * * ">
+        <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+      </JointFree>
+    </Segment>
+  </Skeleton>
+
+  <MarkerSet>
+    <Markers>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position0" POSITION="224.055 115.047 23.048" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Position0_x' 'SkySegway_Position0_y' 'SkySegway_Position0_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position1" POSITION="222.963 -121.377 21.7973" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Position1_x' 'SkySegway_Position1_y' 'SkySegway_Position1_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position5" POSITION="-124.497 91.2291 444.978" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Position5_x' 'SkySegway_Position5_y' 'SkySegway_Position5_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position8" POSITION="-120.527 -89.9561 445.857" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Position8_x' 'SkySegway_Position8_y' 'SkySegway_Position8_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position9" POSITION="-230.995 -138.433 373.373" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Position9_x' 'SkySegway_Position9_y' 'SkySegway_Position9_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled10" POSITION="-297.12 166.083 -0.727153" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Unlabeled10_x' 'SkySegway_Unlabeled10_y' 'SkySegway_Unlabeled10_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled21" POSITION="-300.434 -15.9221 -0.480426" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Unlabeled21_x' 'SkySegway_Unlabeled21_y' 'SkySegway_Unlabeled21_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled9" POSITION="-304.156 -160.956 -1.87213" RADIUS="12.5" RGB="170 255 255" SEGMENT="SkySegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'SkySegway_Unlabeled9_x' 'SkySegway_Unlabeled9_y' 'SkySegway_Unlabeled9_z'"/>
+      </Marker>
+    </Markers>
+    <Sticks>
+      <Stick MARKER1="Position0" MARKER2="Position1" RGB="170 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Position5" RGB="170 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Position8" RGB="170 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Position9" RGB="170 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled10" RGB="170 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled21" RGB="170 255 255"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled9" RGB="170 255 255"/>
+      <Stick MARKER1="Position1" MARKER2="Position5" RGB="170 255 255"/>
+      <Stick MARKER1="Position1" MARKER2="Position8" RGB="170 255 255"/>
+      <Stick MARKER1="Position1" MARKER2="Position9" RGB="170 255 255"/>
+      <Stick MARKER1="Position1" MARKER2="Unlabeled10" RGB="170 255 255"/>
+      <Stick MARKER1="Position1" MARKER2="Unlabeled21" RGB="170 255 255"/>
+      <Stick MARKER1="Position1" MARKER2="Unlabeled9" RGB="170 255 255"/>
+      <Stick MARKER1="Position5" MARKER2="Position8" RGB="170 255 255"/>
+      <Stick MARKER1="Position5" MARKER2="Position9" RGB="170 255 255"/>
+      <Stick MARKER1="Position5" MARKER2="Unlabeled10" RGB="170 255 255"/>
+      <Stick MARKER1="Position5" MARKER2="Unlabeled21" RGB="170 255 255"/>
+      <Stick MARKER1="Position5" MARKER2="Unlabeled9" RGB="170 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Position9" RGB="170 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Unlabeled10" RGB="170 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Unlabeled21" RGB="170 255 255"/>
+      <Stick MARKER1="Position8" MARKER2="Unlabeled9" RGB="170 255 255"/>
+      <Stick MARKER1="Position9" MARKER2="Unlabeled10" RGB="170 255 255"/>
+      <Stick MARKER1="Position9" MARKER2="Unlabeled21" RGB="170 255 255"/>
+      <Stick MARKER1="Position9" MARKER2="Unlabeled9" RGB="170 255 255"/>
+      <Stick MARKER1="Unlabeled10" MARKER2="Unlabeled21" RGB="170 255 255"/>
+      <Stick MARKER1="Unlabeled10" MARKER2="Unlabeled9" RGB="170 255 255"/>
+      <Stick MARKER1="Unlabeled21" MARKER2="Unlabeled9" RGB="170 255 255"/>
+    </Sticks>
+  </MarkerSet>
+
+  <Alignment/>
+
+</KinematicModel>

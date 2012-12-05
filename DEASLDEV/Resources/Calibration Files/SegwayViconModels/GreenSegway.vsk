@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<KinematicModel MODEL="GreenSegway" VERSION="2.3">
+
+  <Parameters>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position0_x" PRIOR="218.908554077148" SD="0" VALUE="218.908554077148"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position0_y" PRIOR="117.947288513184" SD="0" VALUE="117.947288513184"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position0_z" PRIOR="25.234733581543" SD="0" VALUE="25.234733581543"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position2_x" PRIOR="185.96549987793" SD="0" VALUE="185.96549987793"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position2_y" PRIOR="112.418296813965" SD="0" VALUE="112.418296813965"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position2_z" PRIOR="76.7586517333984" SD="0" VALUE="76.7586517333984"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position4_x" PRIOR="184.192108154297" SD="0" VALUE="184.192108154297"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position4_y" PRIOR="-125.550003051758" SD="0" VALUE="-125.550003051758"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position4_z" PRIOR="78.0932312011719" SD="0" VALUE="78.0932312011719"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position5_x" PRIOR="-125.960472106934" SD="0" VALUE="-125.960472106934"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position5_y" PRIOR="95.3493270874023" SD="0" VALUE="95.3493270874023"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position5_z" PRIOR="442.100128173828" SD="0" VALUE="442.100128173828"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position6_x" PRIOR="-53.8267631530762" SD="0" VALUE="-53.8267631530762"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position6_y" PRIOR="24.8815937042236" SD="0" VALUE="24.8815937042236"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position6_z" PRIOR="447.033111572266" SD="0" VALUE="447.033111572266"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position12_x" PRIOR="-296.598083496094" SD="0" VALUE="-296.598083496094"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position12_y" PRIOR="-15.9662628173828" SD="0" VALUE="-15.9662628173828"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position12_z" PRIOR="-6.0722279548645" SD="0" VALUE="-6.0722279548645"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position13_x" PRIOR="-297.596801757813" SD="0" VALUE="-297.596801757813"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position13_y" PRIOR="-163.232772827148" SD="0" VALUE="-163.232772827148"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Position13_z" PRIOR="-10.5920820236206" SD="0" VALUE="-10.5920820236206"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Unlabeled189_x" PRIOR="-287.548309326172" SD="0" VALUE="-287.548309326172"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Unlabeled189_y" PRIOR="89.3601379394531" SD="0" VALUE="89.3601379394531"/>
+    <Parameter HIDDEN="1" NAME="GreenSegway_Unlabeled189_z" PRIOR="363.501495361328" SD="0" VALUE="363.501495361328"/>
+  </Parameters>
+
+  <Skeleton>
+    <Segment BOUNDS="-273.224 -323.224 -240 273.224 323.224 600" CONTEXT="General" INERTIA="0 0 0" MASS="0" MASS-CENTRE="0 0 0" NAME="GreenSegway" RGB="0 255 179">
+      <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="World_GreenSegway" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + + + + " T="* * * * * * ">
+        <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+      </JointFree>
+    </Segment>
+  </Skeleton>
+
+  <MarkerSet>
+    <Markers>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position0" POSITION="218.909 117.947 25.2347" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position0_x' 'GreenSegway_Position0_y' 'GreenSegway_Position0_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position2" POSITION="185.965 112.418 76.7587" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position2_x' 'GreenSegway_Position2_y' 'GreenSegway_Position2_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position4" POSITION="184.192 -125.55 78.0932" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position4_x' 'GreenSegway_Position4_y' 'GreenSegway_Position4_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position5" POSITION="-125.96 95.3493 442.1" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position5_x' 'GreenSegway_Position5_y' 'GreenSegway_Position5_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position6" POSITION="-53.8268 24.8816 447.033" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position6_x' 'GreenSegway_Position6_y' 'GreenSegway_Position6_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position12" POSITION="-296.598 -15.9663 -6.07223" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position12_x' 'GreenSegway_Position12_y' 'GreenSegway_Position12_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position13" POSITION="-297.597 -163.233 -10.5921" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Position13_x' 'GreenSegway_Position13_y' 'GreenSegway_Position13_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position11" POSITION="-287.548 89.3601 363.501" RADIUS="12.5" RGB="0 255 179" SEGMENT="GreenSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'GreenSegway_Unlabeled189_x' 'GreenSegway_Unlabeled189_y' 'GreenSegway_Unlabeled189_z'"/>
+      </Marker>
+    </Markers>
+    <Sticks>
+      <Stick MARKER1="Position0" MARKER2="Position2" RGB="0 255 179"/>
+      <Stick MARKER1="Position0" MARKER2="Position4" RGB="0 255 179"/>
+      <Stick MARKER1="Position0" MARKER2="Position5" RGB="0 255 179"/>
+      <Stick MARKER1="Position0" MARKER2="Position6" RGB="0 255 179"/>
+      <Stick MARKER1="Position0" MARKER2="Position12" RGB="0 255 179"/>
+      <Stick MARKER1="Position0" MARKER2="Position13" RGB="0 255 179"/>
+      <Stick MARKER1="Position0" MARKER2="Position11" RGB="0 255 179"/>
+      <Stick MARKER1="Position2" MARKER2="Position4" RGB="0 255 179"/>
+      <Stick MARKER1="Position2" MARKER2="Position5" RGB="0 255 179"/>
+      <Stick MARKER1="Position2" MARKER2="Position6" RGB="0 255 179"/>
+      <Stick MARKER1="Position2" MARKER2="Position12" RGB="0 255 179"/>
+      <Stick MARKER1="Position2" MARKER2="Position13" RGB="0 255 179"/>
+      <Stick MARKER1="Position2" MARKER2="Position11" RGB="0 255 179"/>
+      <Stick MARKER1="Position4" MARKER2="Position5" RGB="0 255 179"/>
+      <Stick MARKER1="Position4" MARKER2="Position6" RGB="0 255 179"/>
+      <Stick MARKER1="Position4" MARKER2="Position12" RGB="0 255 179"/>
+      <Stick MARKER1="Position4" MARKER2="Position13" RGB="0 255 179"/>
+      <Stick MARKER1="Position4" MARKER2="Position11" RGB="0 255 179"/>
+      <Stick MARKER1="Position5" MARKER2="Position6" RGB="0 255 179"/>
+      <Stick MARKER1="Position5" MARKER2="Position12" RGB="0 255 179"/>
+      <Stick MARKER1="Position5" MARKER2="Position13" RGB="0 255 179"/>
+      <Stick MARKER1="Position5" MARKER2="Position11" RGB="0 255 179"/>
+      <Stick MARKER1="Position6" MARKER2="Position12" RGB="0 255 179"/>
+      <Stick MARKER1="Position6" MARKER2="Position13" RGB="0 255 179"/>
+      <Stick MARKER1="Position6" MARKER2="Position11" RGB="0 255 179"/>
+      <Stick MARKER1="Position12" MARKER2="Position13" RGB="0 255 179"/>
+      <Stick MARKER1="Position12" MARKER2="Position11" RGB="0 255 179"/>
+      <Stick MARKER1="Position13" MARKER2="Position11" RGB="0 255 179"/>
+    </Sticks>
+  </MarkerSet>
+
+  <Alignment/>
+
+</KinematicModel>

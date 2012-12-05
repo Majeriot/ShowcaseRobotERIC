@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7180AB5F-31AD-41D0-A46A-50E41CDB208F}</ProjectGuid>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Protobuf</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)lib\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\..\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="descriptor.cc" />
+    <ClCompile Include="descriptor.pb.cc" />
+    <ClCompile Include="descriptor_database.cc" />
+    <ClCompile Include="dynamic_message.cc" />
+    <ClCompile Include="extension_set.cc" />
+    <ClCompile Include="extension_set_heavy.cc" />
+    <ClCompile Include="generated_message_reflection.cc" />
+    <ClCompile Include="generated_message_util.cc" />
+    <ClCompile Include="io\coded_stream.cc" />
+    <ClCompile Include="io\gzip_stream.cc" />
+    <ClCompile Include="io\printer.cc" />
+    <ClCompile Include="io\tokenizer.cc" />
+    <ClCompile Include="io\zero_copy_stream.cc" />
+    <ClCompile Include="io\zero_copy_stream_impl.cc" />
+    <ClCompile Include="io\zero_copy_stream_impl_lite.cc" />
+    <ClCompile Include="message.cc" />
+    <ClCompile Include="message_lite.cc" />
+    <ClCompile Include="reflection_ops.cc" />
+    <ClCompile Include="repeated_field.cc" />
+    <ClCompile Include="service.cc" />
+    <ClCompile Include="stubs\common.cc" />
+    <ClCompile Include="stubs\hash.cc" />
+    <ClCompile Include="stubs\once.cc" />
+    <ClCompile Include="stubs\structurally_valid.cc" />
+    <ClCompile Include="stubs\strutil.cc" />
+    <ClCompile Include="stubs\substitute.cc" />
+    <ClCompile Include="text_format.cc" />
+    <ClCompile Include="unknown_field_set.cc" />
+    <ClCompile Include="wire_format.cc" />
+    <ClCompile Include="wire_format_lite.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="descriptor.h" />
+    <ClInclude Include="descriptor.pb.h" />
+    <ClInclude Include="descriptor_database.h" />
+    <ClInclude Include="dynamic_message.h" />
+    <ClInclude Include="extension_set.h" />
+    <ClInclude Include="generated_message_reflection.h" />
+    <ClInclude Include="generated_message_util.h" />
+    <ClInclude Include="io\coded_stream.h" />
+    <ClInclude Include="io\config.h" />
+    <ClInclude Include="io\gzip_stream.h" />
+    <ClInclude Include="io\package_info.h" />
+    <ClInclude Include="io\printer.h" />
+    <ClInclude Include="io\tokenizer.h" />
+    <ClInclude Include="io\zero_copy_stream.h" />
+    <ClInclude Include="io\zero_copy_stream_impl.h" />
+    <ClInclude Include="io\zero_copy_stream_impl_lite.h" />
+    <ClInclude Include="message.h" />
+    <ClInclude Include="message_lite.h" />
+    <ClInclude Include="package_info.h" />
+    <ClInclude Include="reflection_ops.h" />
+    <ClInclude Include="repeated_field.h" />
+    <ClInclude Include="service.h" />
+    <ClInclude Include="stubs\common.h" />
+    <ClInclude Include="stubs\config.h" />
+    <ClInclude Include="stubs\hash.h" />
+    <ClInclude Include="stubs\map-util.h" />
+    <ClInclude Include="stubs\once.h" />
+    <ClInclude Include="stubs\stl_util-inl.h" />
+    <ClInclude Include="stubs\strutil.h" />
+    <ClInclude Include="stubs\substitute.h" />
+    <ClInclude Include="text_format.h" />
+    <ClInclude Include="unknown_field_set.h" />
+    <ClInclude Include="wire_format.h" />
+    <ClInclude Include="wire_format_lite.h" />
+    <ClInclude Include="wire_format_lite_inl.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

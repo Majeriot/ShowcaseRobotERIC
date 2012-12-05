@@ -1,0 +1,13 @@
+package LTLMoP_Csharp;
+message InitMessage {
+	required int32 id = 1;
+	enum SensorType {
+		LIDAR = 0;
+		ARTAG = 1;
+	}
+	enum ActuatorType {
+		ARM = 0;
+	}
+	optional SensorType sensor = 2;
+	optional ActuatorType actuator = 3;
+}

@@ -1,0 +1,28 @@
+package LTLMoPCsharpInterface;
+message PythonRequestMsg {
+	required int32 id = 1;
+	enum SensorType {
+		LIDAR = 0;
+		ARTAG = 1;
+	}
+	enum ActuatorType {
+		ARM = 0;
+	}
+	enum RobotType{
+		PIONEER = 0;
+		SEGWAY = 1;
+	}
+	message Velocity {
+		optional double v = 1;
+		optional double omega = 2;
+	}
+	message Actuator {
+		optional double status = 1;
+	}
+	optional RobotType robot = 2;
+	optional Velocity vel = 3;
+	optional Actuator actuator = 4;
+
+	optional SensorType sensor = 5;
+	optional ActuatorType actuatorType = 6;
+}

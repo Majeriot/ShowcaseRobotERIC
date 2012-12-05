@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<KinematicModel MODEL="BrownSegway" VERSION="2.3">
+
+  <Parameters>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position0_x" PRIOR="228.277816772461" SD="0" VALUE="228.277816772461"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position0_y" PRIOR="110.108772277832" SD="0" VALUE="110.108772277832"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position0_z" PRIOR="29.2278442382813" SD="0" VALUE="29.2278442382813"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position4_x" PRIOR="178.311584472656" SD="0" VALUE="178.311584472656"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position4_y" PRIOR="-125.091949462891" SD="0" VALUE="-125.091949462891"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position4_z" PRIOR="77.9086761474609" SD="0" VALUE="77.9086761474609"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position7_x" PRIOR="-62.9272766113281" SD="0" VALUE="-62.9272766113281"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position7_y" PRIOR="-22.8513870239258" SD="0" VALUE="-22.8513870239258"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position7_z" PRIOR="447.359008789063" SD="0" VALUE="447.359008789063"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position9_x" PRIOR="-236.625091552734" SD="0" VALUE="-236.625091552734"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position9_y" PRIOR="-135.424240112305" SD="0" VALUE="-135.424240112305"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position9_z" PRIOR="371.342834472656" SD="0" VALUE="371.342834472656"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position5_x" PRIOR="-134.368988037109" SD="0" VALUE="-134.368988037109"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position5_y" PRIOR="95.875129699707" SD="0" VALUE="95.875129699707"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Position5_z" PRIOR="443.195373535156" SD="0" VALUE="443.195373535156"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled5_x" PRIOR="-292.567352294922" SD="0" VALUE="-292.567352294922"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled5_y" PRIOR="164.417755126953" SD="0" VALUE="164.417755126953"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled5_z" PRIOR="-9.11538219451904" SD="0" VALUE="-9.11538219451904"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled12_x" PRIOR="-296.492218017578" SD="0" VALUE="-296.492218017578"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled12_y" PRIOR="-160.548751831055" SD="0" VALUE="-160.548751831055"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled12_z" PRIOR="-8.08564376831055" SD="0" VALUE="-8.08564376831055"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled2_x" PRIOR="-289.801849365234" SD="0" VALUE="-289.801849365234"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled2_y" PRIOR="88.1466903686523" SD="0" VALUE="88.1466903686523"/>
+    <Parameter HIDDEN="1" NAME="BrownSegway_Unlabeled2_z" PRIOR="363.882019042969" SD="0" VALUE="363.882019042969"/>
+  </Parameters>
+
+  <Skeleton>
+    <Segment BOUNDS="-273.224 -323.224 -240 273.224 323.224 600" CONTEXT="General" INERTIA="0 0 0" MASS="0" MASS-CENTRE="0 0 0" NAME="BrownSegway" RGB="170 85 0">
+      <JointFree BOUNDS="0 0 0 0 0 0 0 0 0 0 0 0" COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" NAME="World_brown" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" SIGNS="+ + + + + + " T="* * * * * * ">
+        <JointTemplate COVARIANCE="2.46490001678467 0 0 0 0 0  0 2.46490001678467 0 0 0 0  0 0 246.490005493164 0 0 0  0 0 0 1000000 0 0  0 0 0 0 1000000 0  0 0 0 0 0 1000000  " MEAN="0 0 0 0 0 0" POST-ORIENTATION="0 0 0" POST-POSITION="0 0 0" PRE-ORIENTATION="0 0 0" PRE-POSITION="0 0 0" TPOSE-COVARIANCE="0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  0 0 0 0 0 0  " TPOSE-MEAN="0 0 0 0 0 0"/>
+      </JointFree>
+    </Segment>
+  </Skeleton>
+
+  <MarkerSet>
+    <Markers>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position0" POSITION="228.278 110.109 29.2278" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Position0_x' 'BrownSegway_Position0_y' 'BrownSegway_Position0_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position4" POSITION="178.312 -125.092 77.9087" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Position4_x' 'BrownSegway_Position4_y' 'BrownSegway_Position4_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position7" POSITION="-62.9273 -22.8514 447.359" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Position7_x' 'BrownSegway_Position7_y' 'BrownSegway_Position7_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position9" POSITION="-236.625 -135.424 371.343" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Position9_x' 'BrownSegway_Position9_y' 'BrownSegway_Position9_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Position5" POSITION="-134.369 95.8751 443.195" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="required">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Position5_x' 'BrownSegway_Position5_y' 'BrownSegway_Position5_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled5" POSITION="-292.567 164.418 -9.11538" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Unlabeled5_x' 'BrownSegway_Unlabeled5_y' 'BrownSegway_Unlabeled5_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled12" POSITION="-296.492 -160.549 -8.08564" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Unlabeled12_x' 'BrownSegway_Unlabeled12_y' 'BrownSegway_Unlabeled12_z'"/>
+      </Marker>
+      <Marker COVARIANCE="1 0 0 0 1 0 0 0 1 " NAME="Unlabeled2" POSITION="-289.802 88.1467 363.882" RADIUS="12.5" RGB="170 85 0" SEGMENT="BrownSegway" STATUS="optional">
+        <MarkerTemplate COVARIANCE="1 0 0 0 1 0 0 0 1 " PLACEMENT-COVARIANCE="1 0 0 0 1 0 0 0 1 " POSITION="'BrownSegway_Unlabeled2_x' 'BrownSegway_Unlabeled2_y' 'BrownSegway_Unlabeled2_z'"/>
+      </Marker>
+    </Markers>
+    <Sticks>
+      <Stick MARKER1="Position0" MARKER2="Position4" RGB="170 85 0"/>
+      <Stick MARKER1="Position0" MARKER2="Position7" RGB="170 85 0"/>
+      <Stick MARKER1="Position0" MARKER2="Position9" RGB="170 85 0"/>
+      <Stick MARKER1="Position0" MARKER2="Position5" RGB="170 85 0"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled5" RGB="170 85 0"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled12" RGB="170 85 0"/>
+      <Stick MARKER1="Position0" MARKER2="Unlabeled2" RGB="170 85 0"/>
+      <Stick MARKER1="Position4" MARKER2="Position7" RGB="170 85 0"/>
+      <Stick MARKER1="Position4" MARKER2="Position9" RGB="170 85 0"/>
+      <Stick MARKER1="Position4" MARKER2="Position5" RGB="170 85 0"/>
+      <Stick MARKER1="Position4" MARKER2="Unlabeled5" RGB="170 85 0"/>
+      <Stick MARKER1="Position4" MARKER2="Unlabeled12" RGB="170 85 0"/>
+      <Stick MARKER1="Position4" MARKER2="Unlabeled2" RGB="170 85 0"/>
+      <Stick MARKER1="Position7" MARKER2="Position9" RGB="170 85 0"/>
+      <Stick MARKER1="Position7" MARKER2="Position5" RGB="170 85 0"/>
+      <Stick MARKER1="Position7" MARKER2="Unlabeled5" RGB="170 85 0"/>
+      <Stick MARKER1="Position7" MARKER2="Unlabeled12" RGB="170 85 0"/>
+      <Stick MARKER1="Position7" MARKER2="Unlabeled2" RGB="170 85 0"/>
+      <Stick MARKER1="Position9" MARKER2="Position5" RGB="170 85 0"/>
+      <Stick MARKER1="Position9" MARKER2="Unlabeled5" RGB="170 85 0"/>
+      <Stick MARKER1="Position9" MARKER2="Unlabeled12" RGB="170 85 0"/>
+      <Stick MARKER1="Position9" MARKER2="Unlabeled2" RGB="170 85 0"/>
+      <Stick MARKER1="Position5" MARKER2="Unlabeled5" RGB="170 85 0"/>
+      <Stick MARKER1="Position5" MARKER2="Unlabeled12" RGB="170 85 0"/>
+      <Stick MARKER1="Position5" MARKER2="Unlabeled2" RGB="170 85 0"/>
+      <Stick MARKER1="Unlabeled5" MARKER2="Unlabeled12" RGB="170 85 0"/>
+      <Stick MARKER1="Unlabeled5" MARKER2="Unlabeled2" RGB="170 85 0"/>
+      <Stick MARKER1="Unlabeled12" MARKER2="Unlabeled2" RGB="170 85 0"/>
+    </Sticks>
+  </MarkerSet>
+
+  <Alignment/>
+
+</KinematicModel>
